@@ -1,0 +1,7 @@
+
+{
+    "baseUrl": "http://www.webdriveruniversity.com",
+    "env": {
+      "something": "staging"
+    }
+  }

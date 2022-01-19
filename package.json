@@ -1,0 +1,31 @@
+{
+  "name": "cypress-automation-framework",
+  "version": "1.0.0",
+  "description": "Cypress Automation Framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-headless": "npx cypress run",
+    "run-headed": "npx cypress run --headed",
+    "run-chrome": "npx cypress run --browser --chrome",
+    "run-dashboard": "npx cypress run --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
+    "run-folder-webdriver": "npx cypress run --spec cypress/integration/webdriveruniversity/*",
+    "merge-reports": "jrm cypress/results/combined.xml \"cypress/results/*.xml\"",
+    "delete-reports": "rm cypress/results/* || true",
+    "mochawesome-merge":"npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && marge mochawesome.json",
+    "mochawesome-delete": "rm mochawesome-report/* || true"
+  },
+  "author": "Ega",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^4.12.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.6.2",
+    "junit-report-merger": "^3.0.5",
+    "mocha-junit-reporter": "^2.0.2",
+    "mochawesome": "^7.0.1",
+    "mochawesome-merge": "^4.2.1",
+    "mochawesome-report-generator": "^6.0.1"
+  }
+}

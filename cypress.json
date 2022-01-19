@@ -1,0 +1,17 @@
+{
+  "chromeWebSecurity": false,
+  "env": {
+    "firstName": "Ega",
+    "lastName": "Septian",
+    "email": "egatest@gmail.com",
+    "comment": "Hellowww Worldd"
+  },
+  "viewportWidth": 1366,
+  "viewportHeight": 768,
+  "projectId": "dod6qo",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "configFile": "reporter-config.json"
+  },
+  "video": false
+}
