@@ -9,6 +9,7 @@
     "run-chrome": "npx cypress run --env configFile=staging --browser --chrome",
     "run-dashboard": "npx cypress run --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
     "run-folder-webdriver": "npx cypress run --env configFile=staging --spec cypress/integration/webdriveruniversity/*",
+    "run-folder-automationteststore": "npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/*",
     "run-folder-automation-dashboard":"npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/alias-invoke.js --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
     "merge-reports": "jrm cypress/results/combined.xml \"cypress/results/*.xml\"",
     "delete-reports": "rm cypress/results/* || true",
