@@ -14,7 +14,7 @@ pipeline{
                         git url:'https://github.com/stianega/cypress-automation.git'
                         sh 'NO_COLOR=1 npm install'
                         sh 'NO_COLOR=1 npm update'
-                        sh 'NO_COLOR=1 npm run parallel-automationteststore-dashboard'
+                        sh 'NO_COLOR=1 npm run ${Script}'
                     }
                 }
                 stage('Slave Node2'){
@@ -25,7 +25,7 @@ pipeline{
                         git url:'https://github.com/stianega/cypress-automation.git'
                         sh 'NO_COLOR=1 npm install'
                         sh 'NO_COLOR=1 npm update'
-                        sh 'NO_COLOR=1 npm run parallel-automationteststore-dashboard'
+                        sh 'NO_COLOR=1 npm run ${Script}'
                     }
                 }
             }
