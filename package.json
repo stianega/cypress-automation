@@ -14,7 +14,9 @@
     "merge-reports": "jrm cypress/results/combined.xml \"cypress/results/*.xml\"",
     "delete-reports": "rm cypress/results/* || true",
     "mochawesome-merge":"npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && marge mochawesome.json",
-    "mochawesome-delete": "rm mochawesome-report/* || true"
+    "mochawesome-delete": "rm mochawesome-report/* || true",
+    "parallel-automationteststore-dashboard": "npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/* --record --key ecd46f62-c4ec-429a-8183-96c70f841308 --parallel"
+
   },
   "author": "Ega",
   "license": "ISC",
