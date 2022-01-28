@@ -10,20 +10,18 @@
     "run-dashboard": "npx cypress run --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
     "run-folder-webdriver": "npx cypress run --env configFile=staging --spec cypress/integration/webdriveruniversity/*",
     "run-folder-automationteststore": "npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/*",
-    "run-folder-automation-dashboard":"npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/alias-invoke.js --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
+    "run-folder-automation-dashboard": "npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/alias-invoke.js --record --key ecd46f62-c4ec-429a-8183-96c70f841308",
     "merge-reports": "jrm cypress/results/combined.xml \"cypress/results/*.xml\"",
     "delete-reports": "rm cypress/results/* || true",
-    "mochawesome-merge":"npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && marge mochawesome.json",
+    "mochawesome-merge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json && marge mochawesome.json",
     "mochawesome-delete": "rm mochawesome-report/* || true",
     "parallel-automationteststore-dashboard": "npx cypress run --env configFile=staging --spec cypress/integration/automationteststore/* --record --key ecd46f62-c4ec-429a-8183-96c70f841308 --parallel",
     "parallel-webdriveruniversity-dashboard": "npx cypress run --env configFile=staging --spec cypress/integration/webdriveruniversity/* --record --key ecd46f62-c4ec-429a-8183-96c70f841308 --parallel"
-
-
   },
   "author": "Ega",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.12.1",
+    "cypress": "^5.6.0",
     "cypress-file-upload": "^5.0.8",
     "cypress-multi-reporters": "^1.5.0",
     "cypress-xpath": "^1.6.2",
